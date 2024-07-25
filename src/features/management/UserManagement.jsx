@@ -51,7 +51,7 @@ function UserManagement() {
       left: rect.left + window.scrollX,
     });
 
-    handleSelectUser(id);
+    setSelectedUsers([id]);
 
     setOpenDropdownId((prevId) => (prevId === id ? null : id));
   };
