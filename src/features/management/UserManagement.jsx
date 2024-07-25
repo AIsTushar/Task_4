@@ -96,6 +96,7 @@ function UserManagement() {
     } catch (error) {
       toast.error("Failed to block selected users.", { autoClose: 2000 });
     }
+    setOpenDropdownId(null);
   };
 
   const handleUnblock = async () => {
@@ -117,6 +118,7 @@ function UserManagement() {
     } catch (error) {
       toast.error("Failed to unblock selected users.", { autoClose: 2000 });
     }
+    setOpenDropdownId(null);
   };
 
   const handleDelete = async () => {
@@ -140,6 +142,7 @@ function UserManagement() {
       console.error("Error deleting users:", error);
       toast.error("Failed to delete selected users.", { autoClose: 2000 });
     }
+    setOpenDropdownId(null);
   };
 
   return (
